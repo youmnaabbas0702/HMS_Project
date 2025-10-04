@@ -1,0 +1,17 @@
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\HMS_DesktopApp.exe.config
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\HMS_DesktopApp.exe
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\HMS_DesktopApp.pdb
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\ReaLTaiizor.dll
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\ReaLTaiizor.xml
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.csproj.AssemblyReference.cache
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.Properties.Resources.resources
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.csproj.GenerateResource.cache
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.csproj.CoreCompileInputs.cache
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_Desk.290570F6.Up2Date
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.exe
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.pdb
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\Newtonsoft.Json.dll
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\System.CodeDom.dll
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\Newtonsoft.Json.xml
+D:\programming\Projects\HMS\HMS_DesktopApp\bin\Debug\System.CodeDom.xml
+D:\programming\Projects\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.MainMenu.resources

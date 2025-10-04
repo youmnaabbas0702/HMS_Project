@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\hms_desktopapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\hms_desktopapp\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\hms_desktopapp\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB7A3303-8055-43D0-9617-19E73300D21D}|..\\HMSDataAccess\\HMSDataAccess.csproj|d:\\programming\\projects\\hms\\hmsdataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E755F04A-6DE5-4AE4-982D-5FAE059352BA}|..\\HMSBusinessLayer\\HMSBusinessLayer.csproj|d:\\programming\\projects\\hms\\hmsbusinesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T19:25:48.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\MainMenu.cs",
+              "RelativeDocumentMoniker": "MainMenu.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\MainMenu.cs",
+              "RelativeToolTip": "MainMenu.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T19:23:39.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\HMSDataAccess\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\HMSDataAccess\\Class1.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\HMSDataAccess\\Class1.cs",
+              "RelativeToolTip": "..\\HMSDataAccess\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T19:15:24.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\HMSBusinessLayer\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\HMSBusinessLayer\\Class1.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\HMSBusinessLayer\\Class1.cs",
+              "RelativeToolTip": "..\\HMSBusinessLayer\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T19:15:01.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\MainMenu.cs",
+              "RelativeDocumentMoniker": "MainMenu.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\HMS_DesktopApp\\MainMenu.cs [Design]",
+              "RelativeToolTip": "MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T14:35:52.992Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
