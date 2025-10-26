@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_DesktopApp.Doctors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace HMS_DesktopApp
         public MainMenu()
         {
             InitializeComponent();
+
+            this.WindowState = FormWindowState.Maximized;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+        }
+
+        private void doctorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoctorsList frm = new frmDoctorsList();
+            frm.ShowDialog();
         }
     }
 }

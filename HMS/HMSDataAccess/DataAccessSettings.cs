@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HMSDataAccess
 {
-    public class Class1
+    internal class DataAccessSettings
     {
+        public static string ConnectionString = "Server=.;Database=HMS_v1;User Id =sa;Password=123456";
     }
 }

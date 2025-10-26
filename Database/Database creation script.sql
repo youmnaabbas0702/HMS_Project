@@ -247,3 +247,14 @@ CREATE TABLE Midications (
     AverageReviewPercentage DECIMAL(5,2),
     PoorReviewPercentage DECIMAL(5,2)
 );
+
+create table Countries
+(
+CountryID int primary key identity,
+CountryName nvarchar(50))
+
+INSERT INTO HMS_v1.dbo.Countries (CountryName)
+SELECT CountryName
+FROM DVLD.dbo.Countries;
+
+alter table People add NationalityID int references Countries

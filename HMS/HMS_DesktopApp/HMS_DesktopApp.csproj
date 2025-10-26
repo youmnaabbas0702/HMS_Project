@@ -93,6 +93,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctors\frmAddEditDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\frmAddEditDoctor.Designer.cs">
+      <DependentUpon>frmAddEditDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\frmDoctorsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\frmDoctorsList.Designer.cs">
+      <DependentUpon>frmDoctorsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Doctors\frmAddEditDoctor.resx">
+      <DependentUpon>frmAddEditDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\frmDoctorsList.resx">
+      <DependentUpon>frmDoctorsList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +130,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -126,6 +145,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clinicsMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StaffMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientsMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppointmentsMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageDoctors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BIrthDate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StaffName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HMSBusinessLayer\HMSBusinessLayer.csproj">
+      <Project>{e755f04a-6de5-4ae4-982d-5fae059352ba}</Project>
+      <Name>HMSBusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
