@@ -50,6 +50,7 @@
             this.hRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,10 +66,11 @@
             this.staffToolStripMenuItem,
             this.patientsToolStripMenuItem,
             this.newAppointmentToolStripMenuItem,
+            this.usersToolStripMenuItem,
             this.accountSettingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1924, 45);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 43);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,9 +79,9 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::HMS_DesktopApp.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1924, 1005);
+            this.pictureBox1.Size = new System.Drawing.Size(1924, 1007);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -244,6 +246,14 @@
             this.newAppointmentToolStripMenuItem.Size = new System.Drawing.Size(267, 39);
             this.newAppointmentToolStripMenuItem.Text = "New appointment";
             // 
+            // usersToolStripMenuItem
+            // 
+            this.usersToolStripMenuItem.Image = global::HMS_DesktopApp.Properties.Resources.usersMenu;
+            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(122, 39);
+            this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
+            // 
             // accountSettingsToolStripMenuItem
             // 
             this.accountSettingsToolStripMenuItem.Image = global::HMS_DesktopApp.Properties.Resources.account_settings;
@@ -295,6 +305,7 @@
         private System.Windows.Forms.ToolStripMenuItem pharmacyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radiologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
     }
 }
 

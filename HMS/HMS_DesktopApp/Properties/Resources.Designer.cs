@@ -83,6 +83,16 @@ namespace HMS_DesktopApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddUser {
+            get {
+                object obj = ResourceManager.GetObject("AddUser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AppointmentsMenu {
             get {
                 object obj = ResourceManager.GetObject("AppointmentsMenu", resourceCulture);
@@ -153,9 +163,29 @@ namespace HMS_DesktopApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doctor_female_pp {
+            get {
+                object obj = ResourceManager.GetObject("doctor_female_pp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doctor_male {
             get {
                 object obj = ResourceManager.GetObject("doctor_male", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doctor_male_pp {
+            get {
+                object obj = ResourceManager.GetObject("doctor_male_pp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +296,26 @@ namespace HMS_DesktopApp.Properties {
         internal static System.Drawing.Bitmap StaffName {
             get {
                 object obj = ResourceManager.GetObject("StaffName", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usersList {
+            get {
+                object obj = ResourceManager.GetObject("usersList", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usersMenu {
+            get {
+                object obj = ResourceManager.GetObject("usersMenu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

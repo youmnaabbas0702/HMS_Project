@@ -1,4 +1,5 @@
-﻿using HMSBusinessLayer;
+﻿using HMS_DesktopApp.Users;
+using HMSBusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,12 +67,18 @@ namespace HMS_DesktopApp.Doctors
         {
             frmAddEditDoctor frm = new frmAddEditDoctor();
             frm.ShowDialog();
+            RefreshList();
         }
         private void _UpdateCountLabel()
         {
             lblRecordsCount.Text = dgvDoctors.RowCount.ToString();
         }
 
+        private void _ReloadDoctors()
+        {
+            _allDoctors = Doctor.GetAllDoctorsList();
+            _ViewedDoctorsList = _allDoctors;
+        }
         private void _ResetDoctorsList()
         {
             _ViewedDoctorsList = _allDoctors;
@@ -366,6 +373,51 @@ namespace HMS_DesktopApp.Doctors
             }
 
             _LoadDoctorsData();
+        }
+
+        private void RefreshList()
+        {
+            _ReloadDoctors();
+            _LoadDoctorsData();
+        }
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmAddEditDoctor((int)dgvDoctors.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            RefreshList();
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete Doctor [" + dgvDoctors.CurrentRow.Cells[0].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+
+            {
+
+                //Perform Delele and refresh
+                if (Doctor.DeleteByPersonID((int)dgvDoctors.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("Doctor Deleted Successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RefreshList();
+                }
+
+                else
+                    MessageBox.Show("Doctor was not deleted because it has data linked to it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void makeUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int PersonID = (int)dgvDoctors.CurrentRow.Cells[0].Value;
+            if (User.IsPersonAUser(PersonID))
+            {
+                MessageBox.Show("Person already is a user!", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            frmAddEditUser frm = new frmAddEditUser(PersonID, frmAddEditUser.enRole.Doctor);
+            frm.ShowDialog();
         }
     }
 }

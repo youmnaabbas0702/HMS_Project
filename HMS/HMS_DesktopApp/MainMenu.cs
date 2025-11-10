@@ -1,4 +1,5 @@
 ﻿using HMS_DesktopApp.Doctors;
+using HMS_DesktopApp.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,12 @@ namespace HMS_DesktopApp
         private void doctorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDoctorsList frm = new frmDoctorsList();
+            frm.ShowDialog();
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUsersList frm = new frmUsersList();
             frm.ShowDialog();
         }
     }

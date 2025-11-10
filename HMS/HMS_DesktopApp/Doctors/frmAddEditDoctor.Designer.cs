@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.dtpDateJoined = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -45,7 +49,7 @@
             this.cmbDepartment = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.crownNumeric1 = new ReaLTaiizor.Controls.CrownNumeric();
+            this.nupdYearsOfExperience = new ReaLTaiizor.Controls.CrownNumeric();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLicenseNumber = new System.Windows.Forms.TextBox();
             this.btnRemoveImage = new System.Windows.Forms.Button();
@@ -76,10 +80,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -92,17 +96,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crownNumeric1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdYearsOfExperience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dtpDateJoined);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.pictureBox13);
             this.panel1.Controls.Add(this.pictureBox12);
@@ -120,7 +124,7 @@
             this.panel1.Controls.Add(this.cmbDepartment);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.crownNumeric1);
+            this.panel1.Controls.Add(this.nupdYearsOfExperience);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtLicenseNumber);
             this.panel1.Controls.Add(this.btnRemoveImage);
@@ -149,6 +153,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 568);
             this.panel1.TabIndex = 8;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::HMS_DesktopApp.Properties.Resources.BIrthDate;
+            this.pictureBox3.Location = new System.Drawing.Point(583, 335);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 67;
+            this.pictureBox3.TabStop = false;
+            // 
+            // dtpDateJoined
+            // 
+            this.dtpDateJoined.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateJoined.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateJoined.Location = new System.Drawing.Point(645, 337);
+            this.dtpDateJoined.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDateJoined.Name = "dtpDateJoined";
+            this.dtpDateJoined.Size = new System.Drawing.Size(191, 27);
+            this.dtpDateJoined.TabIndex = 66;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(463, 343);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 19);
+            this.label8.TabIndex = 65;
+            this.label8.Text = "Date joined:";
             // 
             // pictureBox13
             // 
@@ -313,13 +348,13 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "Years of experience:";
             // 
-            // crownNumeric1
+            // nupdYearsOfExperience
             // 
-            this.crownNumeric1.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.crownNumeric1.Location = new System.Drawing.Point(714, 281);
-            this.crownNumeric1.Name = "crownNumeric1";
-            this.crownNumeric1.Size = new System.Drawing.Size(120, 27);
-            this.crownNumeric1.TabIndex = 48;
+            this.nupdYearsOfExperience.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nupdYearsOfExperience.Location = new System.Drawing.Point(714, 281);
+            this.nupdYearsOfExperience.Name = "nupdYearsOfExperience";
+            this.nupdYearsOfExperience.Size = new System.Drawing.Size(120, 27);
+            this.nupdYearsOfExperience.TabIndex = 48;
             // 
             // label1
             // 
@@ -339,6 +374,7 @@
             this.txtLicenseNumber.Name = "txtLicenseNumber";
             this.txtLicenseNumber.Size = new System.Drawing.Size(219, 26);
             this.txtLicenseNumber.TabIndex = 46;
+            this.txtLicenseNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtLicenseNumber_Validating);
             // 
             // btnRemoveImage
             // 
@@ -350,6 +386,7 @@
             this.btnRemoveImage.Text = "remove";
             this.btnRemoveImage.UseVisualStyleBackColor = true;
             this.btnRemoveImage.Visible = false;
+            this.btnRemoveImage.Click += new System.EventHandler(this.btnRemoveImage_Click);
             // 
             // btnSave
             // 
@@ -362,6 +399,7 @@
             this.btnSave.TabIndex = 35;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -387,6 +425,7 @@
             this.rbFemale.TabIndex = 33;
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
+            this.rbFemale.Click += new System.EventHandler(this.rbFemale_Click);
             // 
             // rbMale
             // 
@@ -401,6 +440,7 @@
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            this.rbMale.Click += new System.EventHandler(this.rbMale_Click);
             // 
             // cmbCountry
             // 
@@ -419,6 +459,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(191, 26);
             this.txtPhone.TabIndex = 30;
+            this.txtPhone.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
             // dtpBirthDate
             // 
@@ -441,9 +482,11 @@
             this.llSetImage.TabIndex = 28;
             this.llSetImage.TabStop = true;
             this.llSetImage.Text = "Set Image";
+            this.llSetImage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llSetImage_LinkClicked);
             // 
             // pbImage
             // 
+            this.pbImage.Image = global::HMS_DesktopApp.Properties.Resources.doctor_male_pp;
             this.pbImage.Location = new System.Drawing.Point(852, 111);
             this.pbImage.Margin = new System.Windows.Forms.Padding(2);
             this.pbImage.Name = "pbImage";
@@ -460,6 +503,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(231, 26);
             this.txtEmail.TabIndex = 26;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // txtAddress
             // 
@@ -469,6 +513,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(588, 87);
             this.txtAddress.TabIndex = 25;
+            this.txtAddress.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
             // txtNationalNo
             // 
@@ -477,6 +522,7 @@
             this.txtNationalNo.Name = "txtNationalNo";
             this.txtNationalNo.Size = new System.Drawing.Size(231, 26);
             this.txtNationalNo.TabIndex = 24;
+            this.txtNationalNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
             // 
             // label14
             // 
@@ -562,6 +608,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(362, 26);
             this.txtName.TabIndex = 0;
+            this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
             // 
             // lblPersonID
             // 
@@ -639,36 +686,13 @@
             this.pictureBox14.TabIndex = 65;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox3
+            // openFileDialog1
             // 
-            this.pictureBox3.Image = global::HMS_DesktopApp.Properties.Resources.BIrthDate;
-            this.pictureBox3.Location = new System.Drawing.Point(583, 335);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 67;
-            this.pictureBox3.TabStop = false;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // dateTimePicker1
+            // errorProvider1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(645, 337);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(191, 27);
-            this.dateTimePicker1.TabIndex = 66;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Maiandra GD", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(463, 343);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 19);
-            this.label8.TabIndex = 65;
-            this.label8.Text = "Date joined:";
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmAddEditDoctor
             // 
@@ -685,8 +709,10 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "frmAddEditDoctor";
             this.Text = "Add/Edit doctor";
+            this.Load += new System.EventHandler(this.frmAddEditDoctor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -699,11 +725,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crownNumeric1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdYearsOfExperience)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -740,7 +766,7 @@
         private System.Windows.Forms.ComboBox cmbDepartment;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private ReaLTaiizor.Controls.CrownNumeric crownNumeric1;
+        private ReaLTaiizor.Controls.CrownNumeric nupdYearsOfExperience;
         private System.Windows.Forms.Label lblDoctorID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -759,7 +785,9 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDateJoined;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

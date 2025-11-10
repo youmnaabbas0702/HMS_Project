@@ -11,6 +11,16 @@ namespace HMSBusinessLayer
     public class Doctor
     {
         public enum enMode { AddNew, Update }
+        public enum enRole
+        {
+            Admin,
+            Doctor,
+            Nurse,
+            Receptionist,
+            Pharmacist,
+            HR,
+            LabTechnician
+        }
 
         public int DoctorID { get; private set; }
         public int PersonID { get; private set; }
@@ -223,5 +233,9 @@ namespace HMSBusinessLayer
             return DoctorDataAccess.DeactivateDoctor(doctorID);
         }
 
+        public static bool IsDoctorExist(string LicenseNumber)
+        {
+            return DoctorDataAccess.IsDoctorExist(LicenseNumber);
+        }
     }
 }

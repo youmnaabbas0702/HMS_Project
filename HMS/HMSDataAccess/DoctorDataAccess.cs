@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace HMSDataAccess
 {
@@ -46,13 +47,10 @@ namespace HMSDataAccess
                     }
                 }
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("SQL Error in FindDoctorByID: " + ex.Message);
-            }
             catch (Exception ex)
             {
-                Console.WriteLine("Unexpected Error in FindDoctorByID: " + ex.Message);
+                LoggingManager.LogError(ex);
+
             }
 
             return isFound;
@@ -113,6 +111,8 @@ namespace HMSDataAccess
             }
             catch (Exception ex)
             {
+                LoggingManager.LogError(ex);
+
                 isAdded = false;
 
             }
@@ -175,6 +175,7 @@ namespace HMSDataAccess
 
             catch (Exception ex)
             {
+                LoggingManager.LogError(ex);
 
                 return false;
             }
@@ -199,6 +200,8 @@ namespace HMSDataAccess
             }
             catch (Exception ex)
             {
+                LoggingManager.LogError(ex);
+
                 return null;
             }
 
@@ -222,13 +225,10 @@ namespace HMSDataAccess
                     isDeleted = rows > 0;
                 }
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("SQL Error in DeleteDoctorByPersonID: " + ex.Message);
-            }
+
             catch (Exception ex)
             {
-                Console.WriteLine("Unexpected Error in DeleteDoctorByPersonID: " + ex.Message);
+                LoggingManager.LogError(ex);
             }
 
             return isDeleted;
@@ -251,13 +251,9 @@ namespace HMSDataAccess
                     isDeleted = rows > 0;
                 }
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("SQL Error in DeleteDoctorByDoctorID: " + ex.Message);
-            }
             catch (Exception ex)
             {
-                Console.WriteLine("Unexpected Error in DeleteDoctorByDoctorID: " + ex.Message);
+                LoggingManager.LogError(ex);
             }
 
             return isDeleted;
@@ -280,17 +276,50 @@ namespace HMSDataAccess
                     isDeactivated = rows > 0;
                 }
             }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("SQL Error in DeactivateDoctor: " + ex.Message);
-            }
+
             catch (Exception ex)
             {
-                Console.WriteLine("Unexpected Error in DeactivateDoctor: " + ex.Message);
+                LoggingManager.LogError(ex);
             }
 
             return isDeactivated;
         }
+
+        public static bool IsDoctorExist(string LicenseNumber)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+
+            string query = "SELECT Found=1 FROM Doctors WHERE LicenseNumber = @LicenseNumber";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@LicenseNumber", LicenseNumber);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                isFound = reader.HasRows;
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                LoggingManager.LogError(ex);
+
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
+
 
     }
 }

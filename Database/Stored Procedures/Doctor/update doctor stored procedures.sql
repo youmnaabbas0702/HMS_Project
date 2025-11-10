@@ -16,7 +16,6 @@ CREATE PROCEDURE SP_UpdateDoctor
     @IsActive BIT
 AS
 BEGIN
-    SET NOCOUNT ON;
 
     BEGIN TRANSACTION;
 
@@ -67,3 +66,4 @@ BEGIN
     END CATCH
 END
 GO
+

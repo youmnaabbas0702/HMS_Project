@@ -7,11 +7,8 @@
       "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\new folder\\hms\\hms_desktopapp\\doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E755F04A-6DE5-4AE4-982D-5FAE059352BA}|..\\HMSBusinessLayer\\HMSBusinessLayer.csproj|d:\\programming\\projects\\hms\\new folder\\hms\\hmsbusinesslayer\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,24 +18,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 302,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMSBusinessLayer\\Doctor.cs",
-              "RelativeDocumentMoniker": "..\\HMSBusinessLayer\\Doctor.cs",
-              "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMSBusinessLayer\\Doctor.cs",
-              "RelativeToolTip": "..\\HMSBusinessLayer\\Doctor.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T11:26:45.086Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,9 +32,9 @@
               "RelativeDocumentMoniker": "Doctors\\frmDoctorsList.cs",
               "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs",
               "RelativeToolTip": "Doctors\\frmDoctorsList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:11:42.207Z",
+              "WhenOpened": "2025-11-10T20:05:18.998Z",
               "EditorCaption": ""
             },
             {
@@ -62,7 +46,7 @@
               "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs [Design]",
               "RelativeToolTip": "Doctors\\frmDoctorsList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:11:36.294Z",
+              "WhenOpened": "2025-11-10T20:05:16.577Z",
               "EditorCaption": " [Design]"
             }
           ]

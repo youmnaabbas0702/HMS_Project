@@ -70,5 +70,10 @@ namespace HMSBusinessLayer
 
             return null;
         }
+
+        public static bool isPersonExist(string NationlNo)
+        {
+            return PersonDataAccess.IsPersonExist(NationlNo);
+        }
     }
 }

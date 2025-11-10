@@ -38,3 +38,7 @@ D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\HMSBusinessL
 D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\HMSDataAccess.dll
 D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\HMSBusinessLayer.pdb
 D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\HMSDataAccess.pdb
+D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.Users.frmAddEditUser.resources
+D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\obj\Debug\HMS_DesktopApp.Users.frmUsersList.resources
+D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\Common.dll
+D:\programming\Projects\HMS\New folder\HMS\HMS_DesktopApp\bin\Debug\Common.pdb

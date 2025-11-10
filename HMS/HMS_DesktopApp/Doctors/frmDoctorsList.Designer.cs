@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.lblRecordsCount = new System.Windows.Forms.Label();
             this.cmbFilter = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvDoctors = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -41,7 +47,10 @@
             this.dtpDateFilter = new System.Windows.Forms.DateTimePicker();
             this.cmbGenderFilter = new System.Windows.Forms.ComboBox();
             this.cmbIsActiveFilter = new System.Windows.Forms.ComboBox();
+            this.makeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,6 +125,7 @@
             this.dgvDoctors.AllowUserToOrderColumns = true;
             this.dgvDoctors.BackgroundColor = System.Drawing.Color.White;
             this.dgvDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoctors.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvDoctors.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvDoctors.Location = new System.Drawing.Point(11, 264);
             this.dgvDoctors.Name = "dgvDoctors";
@@ -124,6 +134,47 @@
             this.dgvDoctors.RowTemplate.Height = 28;
             this.dgvDoctors.Size = new System.Drawing.Size(1514, 404);
             this.dgvDoctors.TabIndex = 12;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDetailsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.makeUserToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 193);
+            // 
+            // showDetailsToolStripMenuItem
+            // 
+            this.showDetailsToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
+            this.showDetailsToolStripMenuItem.Text = "Show Details";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F);
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F);
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -206,6 +257,19 @@
             this.cmbIsActiveFilter.Visible = false;
             this.cmbIsActiveFilter.SelectedIndexChanged += new System.EventHandler(this.cmbIsActiveFilter_SelectedIndexChanged);
             // 
+            // makeUserToolStripMenuItem
+            // 
+            this.makeUserToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F);
+            this.makeUserToolStripMenuItem.Name = "makeUserToolStripMenuItem";
+            this.makeUserToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
+            this.makeUserToolStripMenuItem.Text = "Make user";
+            this.makeUserToolStripMenuItem.Click += new System.EventHandler(this.makeUserToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            // 
             // frmDoctorsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -228,6 +292,7 @@
             this.Text = "Doctors";
             this.Load += new System.EventHandler(this.frmDoctorsList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,5 +314,12 @@
         private System.Windows.Forms.DateTimePicker dtpDateFilter;
         private System.Windows.Forms.ComboBox cmbGenderFilter;
         private System.Windows.Forms.ComboBox cmbIsActiveFilter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem makeUserToolStripMenuItem;
     }
 }

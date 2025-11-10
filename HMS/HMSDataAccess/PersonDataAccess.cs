@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace HMSDataAccess
 {
@@ -53,7 +54,41 @@ namespace HMSDataAccess
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error in GetPersonInfoByID: " + ex.Message);
+                LoggingManager.LogError(ex);
+            }
+
+            return isFound;
+        }
+
+        public static bool IsPersonExist(string NationalNo)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
+
+            string query = "SELECT Found=1 FROM People WHERE NationalNo = @NationalNo";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@NationalNo", NationalNo);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                isFound = reader.HasRows;
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
             }
 
             return isFound;
