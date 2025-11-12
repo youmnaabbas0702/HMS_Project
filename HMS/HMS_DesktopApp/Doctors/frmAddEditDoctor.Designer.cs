@@ -707,6 +707,7 @@
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
             this.Name = "frmAddEditDoctor";
             this.Text = "Add/Edit doctor";
             this.Load += new System.EventHandler(this.frmAddEditDoctor_Load);

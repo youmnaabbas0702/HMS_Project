@@ -322,6 +322,7 @@
             this.Controls.Add(this.lblUserID);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.UserID);
+            this.MaximizeBox = false;
             this.Name = "frmAddEditUser";
             this.Text = "Add/Edit User";
             this.Load += new System.EventHandler(this.frmAddEditUser_Load);

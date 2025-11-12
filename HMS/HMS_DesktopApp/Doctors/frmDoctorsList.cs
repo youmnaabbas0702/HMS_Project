@@ -419,5 +419,12 @@ namespace HMS_DesktopApp.Doctors
             frmAddEditUser frm = new frmAddEditUser(PersonID, frmAddEditUser.enRole.Doctor);
             frm.ShowDialog();
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int DoctorID = (int)dgvDoctors.CurrentRow.Cells[1].Value;
+            frmDoctorDetails frm = new frmDoctorDetails(DoctorID);
+            frm.ShowDialog();
+        }
     }
 }

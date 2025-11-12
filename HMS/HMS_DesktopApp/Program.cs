@@ -16,7 +16,7 @@ namespace HMS_DesktopApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.Run(new frmLogin());
         }
     }
 }

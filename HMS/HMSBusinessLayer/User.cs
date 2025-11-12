@@ -14,6 +14,7 @@ namespace HMSBusinessLayer
         public enMode Mode { get; private set; }
         public int UserID { get; private set; }
         public int PersonID { get; set; }
+        public Person PersonInfo { get; private set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public int RoleID { get; set; }
@@ -37,6 +38,7 @@ namespace HMSBusinessLayer
             Mode = enMode.Update;
             UserID = userID;
             PersonID = personID;
+            PersonInfo = Person.Find(PersonID);
             UserName = userName;
             Password = password;
             RoleID = roleID;
@@ -66,6 +68,36 @@ namespace HMSBusinessLayer
                     UserName,
                     "",
                     RoleID,
+                    isActive
+                );
+            }
+
+            return null;
+        }
+
+        public static User Find(string userName)
+        {
+            int userID = -1;
+            int personID = -1;
+            int roleID = -1;
+            bool isActive = false;
+
+            bool isFound = UserDataAccess.FindUserByUserName(
+                userName,
+                ref personID,
+                ref userID,
+                ref roleID,
+                ref isActive
+            );
+
+            if (isFound)
+            {
+                return new User(
+                    userID,
+                    personID,
+                    userName,
+                    "",
+                    roleID,
                     isActive
                 );
             }

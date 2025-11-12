@@ -1,4 +1,5 @@
 ﻿using HMS_DesktopApp.Doctors;
+using HMS_DesktopApp.Global_Classes;
 using HMS_DesktopApp.Users;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,14 @@ namespace HMS_DesktopApp
 {
     public partial class MainMenu : Form
     {
-        public MainMenu()
+        frmLogin _frmLogin;
+
+        public MainMenu(frmLogin frm)
         {
             InitializeComponent();
-
+            _frmLogin = frm;
             this.WindowState = FormWindowState.Maximized;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
 
         }
 
@@ -34,6 +36,13 @@ namespace HMS_DesktopApp
         {
             frmUsersList frm = new frmUsersList();
             frm.ShowDialog();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginManager.CurrentUser = null;
+            _frmLogin.Show();
+            this.Close();
         }
     }
 }

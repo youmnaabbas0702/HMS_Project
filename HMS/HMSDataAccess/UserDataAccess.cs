@@ -47,6 +47,46 @@ namespace HMSDataAccess
             return isFound;
         }
 
+        public static bool FindUserByUserName(
+    string userName,
+    ref int personID,
+    ref int userID,
+    ref int roleID,
+    ref bool isActive)
+        {
+            bool isFound = false;
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DataAccessSettings.ConnectionString))
+                using (SqlCommand cmd = new SqlCommand("SP_FindUserByUserName", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@UserName", userName);
+
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            isFound = true;
+                            personID = Convert.ToInt32(reader["PersonID"]);
+                            userID = Convert.ToInt32(reader["UserID"]);
+                            roleID = Convert.ToInt32(reader["RoleID"]);
+                            isActive = Convert.ToBoolean(reader["IsActive"]);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggingManager.LogError(ex);
+            }
+
+            return isFound;
+        }
+
         public static int AddNewUser(int personID, string userName, string passwordHash, int roleID, bool isActive)
         {
             int newUserID = -1;

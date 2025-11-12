@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\new folder\\hms\\hms_desktopapp\\doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|d:\\programming\\projects\\hms\\new folder\\hms\\hms_desktopapp\\doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:doctors\\frmdoctorslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{436379FF-CD32-46F8-ACF0-3FA2D3014403}|HMS_DesktopApp.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +23,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmDoctorsList.cs",
-              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs",
-              "RelativeDocumentMoniker": "Doctors\\frmDoctorsList.cs",
-              "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs",
-              "RelativeToolTip": "Doctors\\frmDoctorsList.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwDwAAAAAAAAAAAAAAA==",
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\frmLogin.cs [Design]",
+              "RelativeToolTip": "frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:05:18.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmDoctorsList.cs [Design]",
-              "DocumentMoniker": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs",
-              "RelativeDocumentMoniker": "Doctors\\frmDoctorsList.cs",
-              "ToolTip": "D:\\programming\\Projects\\HMS\\New folder\\HMS\\HMS_DesktopApp\\Doctors\\frmDoctorsList.cs [Design]",
-              "RelativeToolTip": "Doctors\\frmDoctorsList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:05:16.577Z",
+              "WhenOpened": "2025-11-11T21:08:33.046Z",
               "EditorCaption": " [Design]"
             }
           ]

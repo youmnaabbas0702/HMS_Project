@@ -416,7 +416,8 @@ namespace HMS_DesktopApp.Doctors
                 // Trigger the event to send data back to the caller form.
                 DataBack?.Invoke(this, _Doctor.DoctorID);
 
-                AddUser();
+                if(_Mode == enMode.AddNew)
+                    AddUser();
             }
             else
                 MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

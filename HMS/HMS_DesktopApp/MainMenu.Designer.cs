@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clinicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generalMedicineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cardiologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +51,8 @@
             this.newAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,18 +74,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1924, 43);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::HMS_DesktopApp.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1924, 1007);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // clinicsToolStripMenuItem
             // 
@@ -256,10 +245,32 @@
             // 
             // accountSettingsToolStripMenuItem
             // 
+            this.accountSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logoutToolStripMenuItem});
             this.accountSettingsToolStripMenuItem.Image = global::HMS_DesktopApp.Properties.Resources.account_settings;
             this.accountSettingsToolStripMenuItem.Name = "accountSettingsToolStripMenuItem";
             this.accountSettingsToolStripMenuItem.Size = new System.Drawing.Size(251, 39);
             this.accountSettingsToolStripMenuItem.Text = "Account settings";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::HMS_DesktopApp.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1924, 1007);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Image = global::HMS_DesktopApp.Properties.Resources.userLogout;
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(270, 44);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // MainMenu
             // 
@@ -306,6 +317,7 @@
         private System.Windows.Forms.ToolStripMenuItem radiologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
 

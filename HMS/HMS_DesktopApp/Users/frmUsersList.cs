@@ -264,14 +264,14 @@ namespace HMS_DesktopApp.Users
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmAddEditUser((int)dgvUsers.CurrentRow.Cells[0].Value);
+            Form frm = new frmAddEditUser((int)dgvUsers.CurrentRow.Cells[1].Value);
             frm.ShowDialog();
             RefreshList();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to delete User [" + dgvUsers.CurrentRow.Cells[0].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Are you sure you want to delete User [" + dgvUsers.CurrentRow.Cells[1].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
 
             {
 
@@ -288,5 +288,10 @@ namespace HMS_DesktopApp.Users
             }
         }
 
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUserDetails frm = new frmUserDetails((int)dgvUsers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+        }
     }
 }

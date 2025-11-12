@@ -40,15 +40,15 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.makeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAddNew = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtpDateFilter = new System.Windows.Forms.DateTimePicker();
             this.cmbGenderFilter = new System.Windows.Forms.ComboBox();
             this.cmbIsActiveFilter = new System.Windows.Forms.ComboBox();
-            this.makeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnAddNew = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctors)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -146,7 +146,7 @@
             this.toolStripSeparator2,
             this.makeUserToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 193);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(193, 160);
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -154,6 +154,7 @@
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
             this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -176,6 +177,19 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            // 
+            // makeUserToolStripMenuItem
+            // 
+            this.makeUserToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F);
+            this.makeUserToolStripMenuItem.Name = "makeUserToolStripMenuItem";
+            this.makeUserToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
+            this.makeUserToolStripMenuItem.Text = "Make user";
+            this.makeUserToolStripMenuItem.Click += new System.EventHandler(this.makeUserToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -186,39 +200,6 @@
             this.label1.Size = new System.Drawing.Size(284, 48);
             this.label1.TabIndex = 11;
             this.label1.Text = "Manage doctors";
-            // 
-            // btnAddNew
-            // 
-            this.btnAddNew.Image = global::HMS_DesktopApp.Properties.Resources.doctor_add;
-            this.btnAddNew.Location = new System.Drawing.Point(1439, 175);
-            this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(86, 83);
-            this.btnAddNew.TabIndex = 16;
-            this.btnAddNew.UseVisualStyleBackColor = true;
-            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Image = global::HMS_DesktopApp.Properties.Resources.close;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1397, 674);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(128, 52);
-            this.btnClose.TabIndex = 15;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HMS_DesktopApp.Properties.Resources.ManageDoctors;
-            this.pictureBox1.Location = new System.Drawing.Point(713, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 122);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // dtpDateFilter
             // 
@@ -257,18 +238,38 @@
             this.cmbIsActiveFilter.Visible = false;
             this.cmbIsActiveFilter.SelectedIndexChanged += new System.EventHandler(this.cmbIsActiveFilter_SelectedIndexChanged);
             // 
-            // makeUserToolStripMenuItem
+            // btnAddNew
             // 
-            this.makeUserToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F);
-            this.makeUserToolStripMenuItem.Name = "makeUserToolStripMenuItem";
-            this.makeUserToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
-            this.makeUserToolStripMenuItem.Text = "Make user";
-            this.makeUserToolStripMenuItem.Click += new System.EventHandler(this.makeUserToolStripMenuItem_Click);
+            this.btnAddNew.Image = global::HMS_DesktopApp.Properties.Resources.doctor_add;
+            this.btnAddNew.Location = new System.Drawing.Point(1439, 175);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Size = new System.Drawing.Size(86, 83);
+            this.btnAddNew.TabIndex = 16;
+            this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
-            // toolStripSeparator2
+            // btnClose
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Image = global::HMS_DesktopApp.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(1397, 674);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(128, 52);
+            this.btnClose.TabIndex = 15;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HMS_DesktopApp.Properties.Resources.ManageDoctors;
+            this.pictureBox1.Location = new System.Drawing.Point(713, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 122);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // frmDoctorsList
             // 
@@ -288,6 +289,7 @@
             this.Controls.Add(this.dgvDoctors);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "frmDoctorsList";
             this.Text = "Doctors";
             this.Load += new System.EventHandler(this.frmDoctorsList_Load);

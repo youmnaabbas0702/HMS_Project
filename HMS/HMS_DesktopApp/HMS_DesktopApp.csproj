@@ -93,11 +93,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctors\ctrlDoctorCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doctors\ctrlDoctorCard.Designer.cs">
+      <DependentUpon>ctrlDoctorCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctors\frmAddEditDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Doctors\frmAddEditDoctor.Designer.cs">
       <DependentUpon>frmAddEditDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\frmDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\frmDoctorDetails.Designer.cs">
+      <DependentUpon>frmDoctorDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctors\frmDoctorsList.cs">
       <SubType>Form</SubType>
@@ -105,8 +117,15 @@
     <Compile Include="Doctors\frmDoctorsList.Designer.cs">
       <DependentUpon>frmDoctorsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global Classes\clsUtility.cs" />
     <Compile Include="Global Classes\clsValidation.cs" />
+    <Compile Include="Global Classes\LoginManager.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,11 +134,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\ctrlUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrlUserCard.Designer.cs">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\frmAddEditUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Users\frmAddEditUser.Designer.cs">
       <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUserDetails.Designer.cs">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmUsersList.cs">
       <SubType>Form</SubType>
@@ -127,11 +158,20 @@
     <Compile Include="Users\frmUsersList.Designer.cs">
       <DependentUpon>frmUsersList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Doctors\ctrlDoctorCard.resx">
+      <DependentUpon>ctrlDoctorCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\frmAddEditDoctor.resx">
       <DependentUpon>frmAddEditDoctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\frmDoctorDetails.resx">
+      <DependentUpon>frmDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\frmDoctorsList.resx">
       <DependentUpon>frmDoctorsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -146,8 +186,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Users\ctrlUserCard.resx">
+      <DependentUpon>ctrlUserCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Users\frmAddEditUser.resx">
       <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUserDetails.resx">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmUsersList.resx">
       <DependentUpon>frmUsersList.cs</DependentUpon>
@@ -253,6 +299,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AddUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserRole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_female_pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLogout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

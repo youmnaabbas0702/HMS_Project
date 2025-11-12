@@ -123,14 +123,15 @@
             this.editToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(193, 118);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 151);
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Font = new System.Drawing.Font("Gill Sans MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(192, 36);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(240, 36);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -246,6 +247,7 @@
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "frmUsersList";
             this.Text = "Users list";
             this.Load += new System.EventHandler(this.frmUsersList_Load);
